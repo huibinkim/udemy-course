@@ -54,7 +54,7 @@ const birthYear = 1991;
 var job = 'programmer';
 job = 'teacher';
 
-*/
+
 
 // 14. basic operation
 // Math operators
@@ -66,7 +66,7 @@ console.log(ageJonas, ageSarah);
 console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
 
 const firstName = 'Jonas';
-const lastName = 'Huibin';
+const lastName = 'Hui bin';
 console.log(firstName + ' ' + lastName);
 
 // Assignment operators
@@ -85,3 +85,28 @@ console.log(ageSarah >= 18);
 const isFullAge = ageSarah >= 18;
 
 console.log(now - 1991 > now - 2019); 
+
+const  now = 2037;
+const ageJo = now - 1991;
+const ageSo = now - 2018;
+
+console.log(now - 1991 > now - 2018);
+
+let x, y;
+x = y = 25 - 10 - 5;
+console.log(x, y);
+
+const averageAge = (ageJo + ageSo) / 2;
+console.log(ageJo, ageSo, averageAge);
+*/
+
+const firstName = 'Jonas';
+const job = 'teacher';
+const birthYear = 1991;
+const year = 2037;
+
+const jonas = "I'm " + firstName + ', a ' +  (year - birthYear) + ' years old ' + job + ".";
+console.log(jonas);
+
+const jonasNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}.`
+console.log(jonasNew);

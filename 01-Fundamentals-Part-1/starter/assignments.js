@@ -32,3 +32,23 @@ console.log(population < averagePopulation);
 
 const description = country + ' is in ' + continent +', and its ' + population + ' million people speak ' + language;
 console.log(description);
+
+// coding challenge #1
+const weightMark = 78;
+const weightJohn = 92;
+const tallMark = 1.69;
+const tallJohn = 1.95;
+
+const weightMark2 = 95;
+const weightJohn2 = 85;
+const tallMark2 = 1.88;
+const tallJohn2 = 1.76;
+
+const m_BMI = weightMark / (tallMark ** 2); 
+const j_BMI = weightJohn / (tallJohn ** 2); 
+const m_BMI2 = weightMark2 / (tallMark2 ** 2); 
+const j_BMI2 = weightJohn2 / (tallJohn2 ** 2); 
+
+const markHigherBMI = (m_BMI > j_BMI);
+const markHigherBMI2 = (m_BMI2 > j_BMI2);
+console.log(markHigherBMI, markHigherBMI2);
