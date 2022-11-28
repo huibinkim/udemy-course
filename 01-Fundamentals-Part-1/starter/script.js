@@ -120,7 +120,7 @@ lines');
 console.log(`String with 
 multiple 
 lines`);
-*/
+
 
 // lec 18
 const age = 15 ;
@@ -142,3 +142,48 @@ if(birthYear <= 2000){
    century = 21;
 }
 console.log(century);
+
+
+// lec 20
+
+// type conversion
+const inputYear = '1991';
+console.log(Number(inputYear)); 
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Jonas')); //Nan
+console.log(typeof NaN);
+
+console.log(String(23));
+
+// type coercion
+console.log('I am ' + 23 + ' years old')
+console.log('I am ' + '23' + ' years old') //위와 동일
+console.log('23' - '10' - 3);
+console.log('23' * '2');
+console.log('23' / '2');
+
+*/
+
+// lec 21
+// 5 falsy values : 0, '', undefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jonas'));
+console.log(Boolean({}));
+console.log(Boolean(''));
+
+const money = 0;
+if(money){
+  console.log("don't spend it")
+}else{
+  console.log('you should get a job!')
+} 
+
+let height;
+if(height){
+  console.log('yo! height is defined');
+}else{
+  console.log('height is undefined')
+}
