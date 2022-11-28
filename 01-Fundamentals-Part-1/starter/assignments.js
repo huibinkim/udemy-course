@@ -52,3 +52,10 @@ const j_BMI2 = weightJohn2 / (tallJohn2 ** 2);
 const markHigherBMI = (m_BMI > j_BMI);
 const markHigherBMI2 = (m_BMI2 > j_BMI2);
 console.log(markHigherBMI, markHigherBMI2);
+
+// coding challenge #2
+if(m_BMI > j_BMI){
+  console.log(`Mark's BMI(${m_BMI}) is higher than JOHN's(${j_BMI})!`)
+}else{
+  console.log(`John's BMI(${j_BMI}) is higher than Mark's(${m_BMI})!!`)
+};
