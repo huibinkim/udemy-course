@@ -73,7 +73,7 @@ if(dolphins > koalas){
 }else{
   console.log('koalas team is winner')
 }
-*/
+
 
 // bonus 1
 const dolphins = (97 + 112 + 101)/3;
@@ -89,3 +89,5 @@ if(dolphins > koalas && dolphins >= 100){
 }else{
   console.log('no one wins')
 }
+
+*/
