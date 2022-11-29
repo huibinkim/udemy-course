@@ -211,7 +211,7 @@ if(favorite === 23){
 
 if(favorite !== 23) console.log('Why no 23?');
 
-*/
+
 
 // lec 23 boolean logic
 
@@ -236,4 +236,48 @@ if( hasDriversLicense && hasGoodVision && !isTired){
   console.log('Sarah is able to drive!');
 }else{
   console.log('Someone else should drive...');
+}
+
+*/
+
+// lec 26 switch
+
+const day = 'monday';
+
+switch(day){
+  case 'monday': // day === 'monday'
+    console.log('plan course structure');
+    console.log('go to coding meetup');
+    break;
+  case 'tuesday':
+    console.log('Prepare theory videos');
+    break;
+  case 'wednesday':
+  case 'thursday':
+    console.log('Write code examples');
+    break;
+  case 'friday':
+    console.log('record videos');
+    break;
+  case 'saturday':
+  case 'sunday':
+    console.log('enjoy weekend');
+    break;
+  default:
+    console.log('not a valid day!');
+}
+
+if(day === 'monday'){
+  console.log('plan course structure');
+  console.log('go to coding meetup');
+}else if(day === 'tuesday'){
+  console.log('Prepare theory videos');
+}else if(day === 'thursday' || day === 'wednesday'){
+  console.log('Write code examples');
+}else if(day === 'friday'){
+  console.log('record videos');
+}else if(day === 'saturday' || day === 'sunday'){
+  console.log('enjoy weekend');
+}else{
+  console.log('not a valid day')
 }
