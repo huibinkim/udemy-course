@@ -61,4 +61,31 @@ if(m_BMI > j_BMI){
   console.log(`John's BMI(${j_BMI}) is higher than Mark's(${m_BMI})!!`)
 };
 
+
+
+const dolphins = (96 + 108 + 89)/3;
+const koalas = (88 + 91 + 110)/3;
+
+if(dolphins > koalas){
+  console.log('dolphins team is winner');
+}else if(dolphins === koalas){
+  console.log('draw');
+}else{
+  console.log('koalas team is winner')
+}
 */
+
+// bonus 1
+const dolphins = (97 + 112 + 101)/3;
+const koalas = (109 + 95 + 106)/3;
+
+
+if(dolphins > koalas && dolphins >= 100){
+  console.log('dolphins team is winner');
+}else if(dolphins === koalas && dolphins >= 100 && koalas >= 100){
+  console.log('draw');
+}else if(koalas > dolphins && koalas >= 100){ 
+  console.log('koalas team is winner')
+}else{
+  console.log('no one wins')
+}
