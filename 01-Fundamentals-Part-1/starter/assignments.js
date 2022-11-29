@@ -91,3 +91,26 @@ if(dolphins > koalas && dolphins >= 100){
 }
 
 */
+
+const cost = 275;
+// let tip;
+// if(50 < cost < 300){
+//    tip = cost * 0.15;
+// }else{
+//    tip = cost * 0.2;
+// }
+// console.log(tip);
+
+const tip = cost <= 300 && cost >= 50 ? cost * 0.15 : cost * 0.2;
+// const tip = 50 < cost < 300 ? cost * 0.15 : cost * 0.2;
+console.log(`The bill was ${cost}, the tip was ${tip}, and the total value ${cost + tip}`);
+
+// switch(50 < cost < 300){
+//   case cost : 
+//   console.log(cost * 0.15);
+//   break;
+//   case cost : 
+//   console.log(cost * 0.2);
+//   break;
+//   default : console.log('there is no tips');
+// }
