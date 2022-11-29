@@ -1,3 +1,4 @@
+/*
 // lecture : values and variables
 const country = "Korea";
 const continent = "Asia";
@@ -59,3 +60,5 @@ if(m_BMI > j_BMI){
 }else{
   console.log(`John's BMI(${j_BMI}) is higher than Mark's(${m_BMI})!!`)
 };
+
+*/

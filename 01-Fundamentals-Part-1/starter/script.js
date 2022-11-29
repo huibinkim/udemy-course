@@ -163,7 +163,7 @@ console.log('23' - '10' - 3);
 console.log('23' * '2');
 console.log('23' / '2');
 
-*/
+
 
 // lec 21
 // 5 falsy values : 0, '', undefined, null, NaN
@@ -174,7 +174,7 @@ console.log(Boolean('Jonas'));
 console.log(Boolean({}));
 console.log(Boolean(''));
 
-const money = 0;
+const money = 0; 
 if(money){
   console.log("don't spend it")
 }else{
@@ -186,4 +186,54 @@ if(height){
   console.log('yo! height is defined');
 }else{
   console.log('height is undefined')
+}
+
+
+
+// lec 22
+const age = '18';
+if(age === 18) console.log('you just became an adult(strict)');
+if(age == 18) console.log('you just became an adult(loose)');
+
+const favorite = Number(prompt("What's your favorite number?")); 
+console.log(favorite);
+console.log(typeof favorite);
+
+if(favorite === 23){ 
+  console.log('cool! 23 is good23')
+}else if(favorite === 7){
+  console.log('7 is also cool!')
+}else if(favorite === 9){
+  console.log('9 is also cool!')
+}else{
+  console.log('Number is not 23 of 7')
+}
+
+if(favorite !== 23) console.log('Why no 23?');
+
+*/
+
+// lec 23 boolean logic
+
+const hasDriversLicense = true; //A
+const hasGoodVision = true; //B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+
+// if( hasDriversLicense && hasGoodVision){
+//   console.log('Sarah is able to drive!');
+// }else{
+//   console.log('Someone else should drive...');
+// }
+
+const isTired = false ; //C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if( hasDriversLicense && hasGoodVision && !isTired){
+  console.log('Sarah is able to drive!');
+}else{
+  console.log('Someone else should drive...');
 }
