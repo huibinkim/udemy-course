@@ -67,11 +67,42 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearsUntilRetirement(1991, 'kim'));
 console.log(yearsUntilRetirement(1994 , 'bob'));
-*/
+
 
 // lec 36. functions calling other functions
+
+function cutFruitPieces(fruit){
+  return fruit * 3;
+}
+
 function fruitProcessor(apples, oranges){
-  console.log(apples, oranges);
-  const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+  const applePieces = cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+
+  const juice = `Juice with ${applePieces} apples and ${orangePieces} oranges.`;
   return juice;
 }
+
+console.log(fruitProcessor(2, 3));
+*/
+
+// lec 37 review function
+const calcAge = function(birthYear){
+  return 2037 - birthYear;
+}
+
+const yearsUntilRetirement = function (birthYear, firstName) {
+  const age = calcAge(birthYear);
+  const retirement = 65 - age;
+
+  if(retirement > 0){
+    console.log(`${firstName} retires in ${retirement} years`);
+    return retirement;
+  }else{
+    console.log(`${firstName} has already retired!`)
+    return -1;
+  }
+}
+
+console.log(yearsUntilRetirement(1991, 'HuiBin'));
+console.log(yearsUntilRetirement(1941, 'HuiBin'));
