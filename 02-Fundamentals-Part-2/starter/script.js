@@ -182,4 +182,72 @@ if(friends.includes('Steven')){
   console.log('you have a friend');
 }
 
+
+// lec 42 object
+
+const jonasArray = [
+  'Jonas',
+  'Chris',
+  2037 - 1991, 
+  'teacher',
+  ['Michael', 'Peter', 'Steven']
+];
+
+const jonas = {
+  firstName : 'Jonas',
+  lastName : 'chris',
+  age: 2037 - 1991, 
+  job: 'teacher',
+  friend: ['Michael', 'Peter', 'Steven']
+};
+
+
+
+// lec 43 dot vs bracket notation
+const jonas = {
+  firstName : 'Jonas',
+  lastName : 'chris',
+  age: 2037 - 1991, 
+  job: 'teacher',
+  friend: ['Michael', 'Peter', 'Steven']
+};
+console.log(jonas);
+
+console.log(jonas.lastName);
+console.log(jonas['lastName']);
+
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+
+const interestedIn = prompt('What do you want to know about Jonas? choose between firstName, lastName, age, job and friends');
+
+if(jonas[interestedIn]){
+  console.log(jonas[interestedIn]);
+}else{
+  console.log('wrong request choose between firstName, lastName, age, job and friends')
+}
+
+
+jonas.location = 'korea';
+jonas['twitter'] = '@jonasChris';
+jonas.mom = 'mom';
+console.log(jonas);
+
+// Challenge
+// "Jonas has 3 friends, and his best friend dis called Micheal"
+
+console.log(`${jonas['firstName']} has ${jonas.friend.length}, and his best friend is called ${jonas.friend[0]}`);
+
 */
+
+// lec 44 object method
+
+const jonas = {
+  firstName : 'Jonas',
+  lastName : 'Chris',
+  birthYear: 2037 - 1991, 
+  job: 'teacher',
+  friend: ['Michael', 'Peter', 'Steven'],
+  hasDriversLicense: true
+};
