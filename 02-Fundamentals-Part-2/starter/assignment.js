@@ -2,18 +2,13 @@
 // coding challenge 1
 
 // my do job
-const dolphinsScore = 85 + 154 + 41;
-const koalasScore = 65 + 34 + 27;
-
+const dolphinsScore = calcAverage(84 + 90 + 40);
+const koalasScore = calcAverage(65 + 34 + 27);
 const calcAverage = (scores) => {
-  const averageScore = (scores) / 3;
-  return averageScore;
+  return (scores) / 3;
 }
 
-const winner = function checkWinner(avgDolphins, avgKoalas){
-  avgDolphins = calcAverage(dolphinsScore);
-  avgKoalas = calcAverage(koalasScore);
-
+const winner = function (avgDolphins, avgKoalas){
   if(avgDolphins > (avgKoalas*2)){
     console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
   }else if(avgDolphins*2 < avgKoalas){
@@ -23,8 +18,8 @@ const winner = function checkWinner(avgDolphins, avgKoalas){
   }
 }
 
-console.log(winner());
-*/
+winner(dolphinsScore, koalasScore);
+
 
 // jonas do job
 const calcAverage = (a, b, c) => (a + b + c) / 3;
@@ -43,3 +38,29 @@ const checkWinner = function(avgDolphins, avgKoalas){
 }
 
 checkWinner(scoreDolphins, scoreKoalas);
+*/
+
+// coding challenge 2
+
+const calcTip =function(bill){
+  return bill >= 50 && bill <= 300 ? bill * 0.15 :
+  bill * 0.2;
+}
+// const calcTip = (bill) => {
+//   if(50 <= bill <= 300){
+//     return bill * 0.15;
+//   }else{
+//     return bill * 0.2;
+//   }
+// }
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]),
+              calcTip(bills[2])];
+
+const total = [bills[0]+tips[0], 
+              bills[1]+tips[1], bills[2]+tips[2]];
+
+console.log(tips);
+console.log(total);
+
