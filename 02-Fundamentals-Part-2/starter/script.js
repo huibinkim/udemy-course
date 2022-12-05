@@ -239,7 +239,6 @@ console.log(jonas);
 
 console.log(`${jonas['firstName']} has ${jonas.friend.length}, and his best friend is called ${jonas.friend[0]}`);
 
-*/
 
 // lec 44 object method
 
@@ -281,3 +280,106 @@ console.log(jonas.age);
 // "Jonas is a 46 year old teacher, and he has a driver's license"
 
 console.log(jonas.getSummary());
+
+
+// lec 46.loop
+// console.log('Lifting weights repetition 1 ')
+
+// for loop keeps running while condition is TRUE
+for(let rep = 1; rep <= 10; rep++){
+  console.log(`Lifting weights repetition ${rep} 😁`);
+}
+
+
+// lec 47. loop example
+const jonasArray = [
+  'Jonas',
+  'Chris',
+  2037 - 1991, 
+  'teacher',
+  ['Michael', 'Peter', 'Steven'],
+  true
+];
+
+const types = [];
+for(let i = 0; i < jonasArray.length; i++){
+  // Reading from jonasArray
+  console.log(jonasArray[i], typeof jonasArray[i]);
+
+  // Filling types array 1
+  // types[i] = typeof jonasArray[i];
+  types.push(typeof jonasArray[i]);
+}
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+for(let i = 0; i<years.length; i++){
+  ages.push(2037 - years[i]);
+}
+console.log(ages);
+
+// continue and break
+console.log('---------only strings.')
+for(let i = 0; i < jonasArray.length; i++){
+  // jonas배열[i]이 string이 아닌게 true 라면, 건너뛰고 다음 순서로 가라.
+  if(typeof jonasArray[i] !== 'string') continue;
+
+  console.log(jonasArray[i], typeof jonasArray[i]);
+}
+
+console.log('---------break with number.')
+for(let i = 0; i < jonasArray.length; i++){
+  // jonas배열[i]이 number이면, 그 즉시 멈춰라 .
+  if(typeof jonasArray[i] === 'number') break;
+
+  console.log(jonasArray[i], typeof jonasArray[i]);
+}
+
+
+// lec 48. looping backwards and loops in loops
+const jonas = [
+  'Jonas',
+  'Chris',
+  2037 - 1991, 
+  'teacher',
+  ['Michael', 'Peter', 'Steven'],
+  true
+];
+
+// 1, 2, ... , 4
+// 4, 3, ... `
+ 
+for(let i = jonas.length - 1; i >= 0; i--){
+  console.log(jonas[i]);
+}
+
+for(let exercise = 1; exercise <= 3; exercise++){
+  console.log(`Starting exercise ${exercise}`);
+
+  for(let rep = 1; rep < 6; rep++){
+    console.log(`Exercise ${exercise}:Lifting weight repetition ${rep} 🤐`)
+  }
+}
+
+
+// lec 49. while loop
+// for(let rep = 1; rep <= 10; rep++){
+//   console.log(`lifting weights repetition ${rep} 😎`);
+// }
+
+let rep = 1;
+while(rep <= 10){
+  console.log(`While : lifting weights repetition ${rep} 😎`);
+  rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+
+while(dice !== 6){
+  console.log(`you rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if(dice === 6) console.log('loop is about to end...');
+}
+*/

@@ -64,7 +64,6 @@ const total = [bills[0]+tips[0],
 
 console.log(tips);
 console.log(total);
-*/
 
 // coding challenge 3
 
@@ -97,4 +96,5 @@ JohnBMI.calcBMI();
 console.log(MarkBMI.bmi);
 console.log(MarkBMI.bmi>JohnBMI.bmi ? `${MarkBMI.fullName}'s BMI(${MarkBMI.bmi}) is higher than ${JohnBMI.fullName}'s BMI(${JohnBMI.bmi})`
           : `${JohnBMI.fullName}'s BMI(${JohnBMI.bmi})is higher than ${MarkBMI.fullName}'s BMI(${MarkBMI.bmi})!`);
+*/
 
