@@ -251,22 +251,25 @@ const jonas = {
   friend: ['Michael', 'Peter', 'Steven'],
   hasDriversLicense: true,
 
+  // ver.1
   // calcAge: function(birthYear){
   //   return 2037 - birthYear;
   // }
 
+  // ver.2
   // calcAge: function(){
   //   console.log(this);
   //   return 2037 - this.birthYear;
   // }
 
+  // ver.3
   calcAge: function(){
     this.age = 2037 - this.birthYear;
     return this.age;
   },
 
   getSummary: function(){
-    return `${this.firstName} is a ${this.calcAge()} and he has ${this.hasDriversLicense ? 'a' : 'no'}`
+    return `${this.firstName} is a ${this.calcAge()} and he has ${this.hasDriversLicense ? 'a' : 'no'} driver license.`
   }
 };
 
