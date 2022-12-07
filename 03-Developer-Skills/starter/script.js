@@ -7,7 +7,7 @@ if (x === 23) console.log(23);
 const calcAge = birthYear => 2037 - birthYear;
 
 console.log();
- */
+
 
 // lec 59
 const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
@@ -73,3 +73,4 @@ const calcTempAmplitudeNew = function (t1, t2) {
 
 const amplitudeNew = calcTempAmplitudeNew([3, 5, 1], [9, -1]);
 console.log(amplitudeNew);
+ */
