@@ -123,7 +123,7 @@ const calcAverage = function(arr){
     // sum = sum + arr[i];
     sum += arr[i];
   }
-  console.log(sum);
+  console.log(calcAverage);
   return sum / arr.length;
 }
 
