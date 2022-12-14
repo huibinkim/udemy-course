@@ -42,6 +42,7 @@ const switchPlayer = function () {
   player0El.classList.toggle('player--active');
   player1El.classList.toggle('player--active');
 };
+
 // Click roll dice functionality
 rollBtn.addEventListener('click', function () {
   if (playing === true) {
