@@ -8,7 +8,7 @@
     <style>
       body {
         height: 100vh;
-        display: flex;
+        /* display: flex; */
         align-items: center;
         background: linear-gradient(to top left, #28b487, #7dd56f);
       }
@@ -21,10 +21,59 @@
         text-align: center;
         color: white;
       }
+
+      .star-check {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .star-check div {
+        position: relative;
+      }
+      .star-check input {
+        position: absolute;
+      }
+      .star-check input[type='checkbox'] + label {
+        position: absolute;
+      }
+      .star-check input[type='checkbox'] + label span {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background: url(../images/icon_star_off.svg) center/contain;
+        cursor: pointer;
+      }
+      .star-check input[type='checkbox']:checked + label span {
+        background: url(../images/icon_star.svg) center/contain;
+      }
     </style>
   </head>
   <body>
     <h1>How JavaScript Works Behind the Scenes</h1>
+    <div class="star-check">
+      <div>
+        <input type="checkbox" id="click" />
+        <label for="click"><span></span></label>
+      </div>
+      <div>
+        <input type="checkbox" id="click" />
+        <label for="click"><span></span></label>
+      </div>
+      <div>
+        <input type="checkbox" id="click" />
+        <label for="click"><span></span></label>
+      </div>
+      <div>
+        <input type="checkbox" id="click" />
+        <label for="click"><span></span></label>
+      </div>
+      <div>
+        <input type="checkbox" id="click" />
+        <label for="click"><span></span></label>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
