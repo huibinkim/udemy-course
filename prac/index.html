@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .file-wrap { position:relative; display:flex; justify-content:space-between; }
+    .file-wrap .input-file-hidden { position:absolute; left:0; top:0; width:100%; height:100%; opacity:0; cursor:pointer; padding:0; }
+    </style>
+</head>
+<body>
+  <!-- 파일추가 버튼을 누르면 폴더 넣을수있는 파일이 열림. 
+    그러나 파일추가 버튼은 css가 안되기 때문에 위에 덮어서 opacity를 0로 주면 된다. 
+  -->
+
+  <div class="add-wrap file-wrap">
+    <input type="text" id="fileName" name="file" title="첨부파일등록">
+    <button type="button" class="btn add"> 파일추가</button>
+    <input type="file" name="attach" id="attach" class="input-file-hidden" onchange="javascript:document.getElementById('fileName').value = this.value">
+  </div>
+
+</body>
+</html>
